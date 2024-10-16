@@ -1,0 +1,24 @@
+{% extends "menu.html" %}
+
+{% block content %}
+    <section class="news">
+        <h1>Noticias y Novedades</h1>
+        <div class="news-cards">
+            <div class="news-card">
+                <img src="{{ url_for('static', filename='images/not1.jpg') }}" alt="Noticia 1">
+                <h2>Nuevo Servicio: Ramos Personalizados</h2>
+                <p>Ahora puedes crear tu ramo único eligiendo tus flores eternas favoritas y personalizando los detalles.</p>
+            </div>
+            <div class="news-card">
+                <img src="{{ url_for('static', filename='images/not2.jpg') }}" alt="Noticia 2">
+                <h2>Ofertas Especiales para Bodas</h2>
+                <p>Ofrecemos descuentos exclusivos para ramos de flores en eventos especiales como bodas y aniversarios.</p>
+            </div>
+            <div class="news-card">
+                <img src="{{ url_for('static', filename='images/not3.jpg') }}" alt="Noticia 3">
+                <h2>Participación en la Feria de Flores</h2>
+                <p>Florería Destellos estará presente en la Feria de Flores local, mostrando nuestros arreglos y novedades.</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}

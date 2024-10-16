@@ -1,0 +1,51 @@
+{% extends "menu.html" %}
+{% block content %}
+    <section class="hero">
+        <div class="hero-content">
+            <img src="{{ url_for('static', filename='images/logo1.png') }}" alt="Logo Florería Destellos" class="hero-logo">
+            <h1>Florería Destellos</h1>
+            <p>Especialistas en flores eternas de cinta y goma de eva. ¡Dale un toque duradero y colorido a cualquier ocasión!</p>
+            <a href="{{ url_for('services') }}" class="btn btn-primary">Explora nuestros servicios</a>
+        </div>
+    </section>
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial">
+                <p>"Los ramos de flores eternas son hermosos y nunca se marchitan. ¡Los adoro!"</p>
+                <p><strong>- María López</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"Compré un ramo de flores de goma de eva para el cumpleaños de mi madre, y le encantó."</p>
+                <p><strong>- Juan Pérez</strong></p>
+            </div>
+            <div class="testimonial">
+                <p>"El servicio es excelente y los productos son de gran calidad. Muy recomendados!"</p>
+                <p><strong>- Ana García</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventajas del Servicio -->
+    <section class="advantages">
+        <h2>¿Por qué elegirnos?</h2>
+        <div class="advantages-cards">
+            <div class="advantage">
+                <img src="{{ url_for('static', filename='images/img1.jpg') }}" alt="Alta Calidad">
+                <h3>Alta Calidad</h3>
+                <p>Nuestras flores eternas están hechas con los mejores materiales, asegurando belleza y durabilidad.</p>
+            </div>
+            <div class="advantage">
+                <img src="{{ url_for('static', filename='images/img2.jfif') }}" alt="Personalización">
+                <h3>Personalización</h3>
+                <p>Creamos ramos personalizados según tus gustos, perfectos para cualquier ocasión.</p>
+            </div>
+            <div class="advantage">
+                <img src="{{ url_for('static', filename='images/img3.png') }}" alt="Entrega Rápida">
+                <h3>Entrega Rápida</h3>
+                <p>Recibe tus flores eternas a tiempo y en perfectas condiciones.</p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

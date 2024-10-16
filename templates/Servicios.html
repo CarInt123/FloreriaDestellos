@@ -1,0 +1,39 @@
+{% extends "menu.html" %}
+
+{% block content %}
+    <section class="services">
+        <h1>Nuestros Servicios</h1>
+        <div class="service-cards">
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/ser1.jpg') }}" alt="Ramos de Rosas">
+                <h2>Ramos de Rosas</h2>
+                <p>Elige entre una gran variedad de ramos de rosas. Desde una rosa individual hasta ramos grandes y decorativos.</p>
+                <a href="{{ url_for('services', service_name='ramos-de-rosas') }}" class="btn">Leer más</a>
+            </div>            
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/ser2.jpg') }}" alt="Ramos con Luz LED">
+                <h2>Ramos con Mariposas y Luz LED</h2>
+                <p>Ramos especiales decorados con mariposas y luces LED para hacer tus momentos aún más brillantes.</p>
+                <a href="{{ url_for('services', service_name='ramos-con-mariposas-luz-led') }}" class="btn">Leer más</a>
+            </div>
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/ser3.jpg') }}" alt="Ramos de Girasoles">
+                <h2>Ramos de Girasoles</h2>
+                <p>Disfruta de la belleza y el encanto de los girasoles en nuestros ramos. Perfectos para alegrar cualquier espacio.</p>
+                <a href="{{ url_for('services', service_name='ramos-de-girasoles') }}" class="btn">Leer más</a>
+            </div>
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/ser4.jfif') }}" alt="Ramos de Flores Eternas">
+                <h2>Ramos de Flores Eternas</h2>
+                <p>Ramos hechos con flores de cinta y goma eva que perduran para siempre. Perfectos para ocasiones especiales.</p>
+                <a href="{{ url_for('services', service_name='ramos-eternos') }}" class="btn">Leer más</a>
+            </div>
+            <div class="service-card">
+                <img src="{{ url_for('static', filename='images/ser5.jfif') }}" alt="Ramos Personalizados">
+                <h2>Ramos Personalizados</h2>
+                <p>Crea un ramo único según tus preferencias. Elige los colores, tipos de flores y detalles que más te gusten.</p>
+                <a href="{{ url_for('services', service_name='ramos-personalizados') }}" class="btn">Leer más</a>
+            </div>
+        </div>
+    </section>
+{% endblock %}

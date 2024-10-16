@@ -1,0 +1,53 @@
+{% extends "menu.html" %}
+{% block content %}
+    <section class="about-history">
+        <h1>Nuestra Historia</h1>
+        <p>
+            Florería Destellos nació en 2020 con la visión de cambiar la forma en que las personas perciben los arreglos florales. En lugar de flores naturales que eventualmente se marchitan, nuestra fundadora, Carolina Cano, quiso crear algo más duradero: flores que pudieran conservar su belleza para siempre. Fue así como nació la idea de usar materiales como cinta y goma eva, creando flores eternas que no solo mantienen su apariencia intacta con el tiempo, sino que también permiten un nivel de personalización que no se puede lograr con flores naturales.
+        </p>
+        <p>
+            Al principio, empezamos como un pequeño emprendimiento desde casa, diseñando ramos y arreglos personalizados para familiares y amigos. Los comentarios positivos y el creciente interés por estos productos nos impulsaron a expandirnos. El concepto de flores que nunca se marchitan atrajo a personas que buscaban algo diferente, algo especial. Con esfuerzo y dedicación, Florería Destellos se estableció rápidamente como un negocio conocido en la región.
+        </p>
+        <p>
+            Con el tiempo, hemos perfeccionado nuestras técnicas y ampliado nuestro catálogo de productos. Ofrecemos desde ramos sencillos y elegantes hasta diseños más complejos que incorporan luces LED, cintas decorativas y otros elementos personalizados. Cada creación es única, y ponemos todo nuestro esfuerzo para asegurarnos de que nuestros clientes reciban exactamente lo que desean.
+        </p>
+        <p>
+            Lo que comenzó como una pequeña idea ha crecido gracias a la lealtad de nuestros clientes y a nuestra pasión por lo que hacemos. Hoy, Florería Destellos sigue innovando, combinando el arte y la creatividad con nuevas tendencias en diseño floral.
+        </p>
+    </section>
+    <section class="about-image">
+        <img src="{{ url_for('static', filename='images/establecimiento.jpg') }}" alt="Imagen del establecimiento">
+    </section>
+
+    <section class="mission-vision">
+        <div class="mission">
+            <h2>Nuestra Misión</h2>
+            <p>Crear arreglos florales eternos que inspiren y embellezcan cualquier momento especial, con productos que perduren en el tiempo y mantengan su calidad y encanto.</p>
+        </div>
+        <div class="vision">
+            <h2>Nuestra Visión</h2>
+            <p>Ser la florería preferida para flores eternas en la región, reconocidos por nuestra innovación, calidad y servicio excepcional.</p>
+        </div>
+    </section>
+    
+    <section class="our-team">
+        <h2>Conoce a Nuestro Equipo</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/per1.jpg') }}" alt="Miembro del equipo 1">
+                <h3>Carolina Cano</h3>
+                <p>Fundadora y Directora Creativa</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/per2.jpg') }}" alt="Miembro del equipo 2">
+                <h3>Daniela Cano</h3>
+                <p>Gerente de Operaciones</p>
+            </div>
+            <div class="team-member">
+                <img src="{{ url_for('static', filename='images/per3.png') }}" alt="Miembro del equipo 3">
+                <h3>Gabriela Cano</h3>
+                <p>Especialista en Diseño Floral</p>
+            </div>
+        </div>
+    </section>
+{% endblock %}
